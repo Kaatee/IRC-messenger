@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Sk2ProjektKlient.jnlp">
+  <information>
+    <title>Sk2ProjektKlient</title>
+    <vendor>Anka</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Sk2ProjektKlient.jar" size="18951" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Sk2ProjektKlient" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="sk2projektklient.Sk2ProjektKlient"  name="Sk2ProjektKlient" />
+  <update check="always"/>
+</jnlp>

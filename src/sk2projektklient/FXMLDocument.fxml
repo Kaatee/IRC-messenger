@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="611.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk2projektklient.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="619.0" layoutY="22.0" onAction="#handleZalogujSie" prefHeight="25.0" prefWidth="96.0" text="Zaloguj Sie" />
+        <Label fx:id="informacje" layoutX="31.0" layoutY="26.0" minHeight="16" minWidth="69" />
+      <Label fx:id="pokoje" layoutX="82.0" layoutY="44.0" text="Pokoje" />
+      <Label fx:id="uzytkownicy" layoutX="257.0" layoutY="45.0" text="Uzytkownicy" />
+      <TextArea fx:id="trescWiadomosci" layoutX="380.0" layoutY="442.0" prefHeight="76.0" prefWidth="357.0" />
+      <Button fx:id="odswierzUzytkownikow" layoutX="213.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleZaladujListeUzytkownikow" prefHeight="25.0" prefWidth="149.0" text="Odśwież listę " />
+      <ListView fx:id="listaPokoi" layoutX="21.0" layoutY="102.0" prefHeight="331.0" prefWidth="149.0" />
+      <ListView fx:id="listaUzytkownikow" layoutX="216.0" layoutY="102.0" prefHeight="331.0" prefWidth="149.0" />
+      <TextArea fx:id="oknoWiadomosci" layoutX="380.0" layoutY="102.0" prefHeight="331.0" prefWidth="357.0" />
+      <Button fx:id="odswierzPokoje" layoutX="21.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleZaladujListePokoi" prefHeight="25.0" prefWidth="149.0" text="Odśwież listę pokoi" />
+      <Button fx:id="utworzPokoj" layoutX="21.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleUtworzPokoj" prefHeight="25.0" prefWidth="149.0" text="Utwórz pokój" />
+      <TextField fx:id="nickText" layoutX="450.0" layoutY="22.0" text="Podaj nick" />
+      <Button fx:id="przyciskWyslij" layoutX="602.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleWyslijWiadomosc" prefHeight="37.0" prefWidth="129.0" text="Wyślij" />
+      <Button fx:id="wylogujSie" layoutX="619.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleWylogujSie" prefHeight="25.0" prefWidth="96.0" text="Wyloguj się" />
+      <Button fx:id="wybierzPokoj" layoutX="21.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleWybierzPokoj" prefHeight="25.0" prefWidth="149.0" text="Wybierz pokój" />
+      <TextField fx:id="nazwaPokoju" layoutX="21.0" layoutY="548.0" text="Podaj nazwe pokoju" />
+      <Button fx:id="dodajDoPokoju" layoutX="177.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleDodajDoPokoju" prefHeight="31.0" prefWidth="36.0" text="&lt;-" />
+      <Button fx:id="zatwierdz" layoutX="178.0" layoutY="548.0" mnemonicParsing="false" onAction="#handleZatwierdz" prefHeight="25.0" prefWidth="82.0" text="Zatwierdź" />
+      <Button fx:id="usunPokoj" layoutX="21.0" layoutY="517.0" mnemonicParsing="false" onAction="#handleUsunPokoj" prefHeight="25.0" prefWidth="149.0" text="Usun Pokoj" />
+      <TextField fx:id="adresIP" layoutX="301.0" layoutY="22.0" text="192.168.0.15" />
+      <Label fx:id="obecnaGrupa" layoutX="422.0" layoutY="72.0" />
+    </children>
+</AnchorPane>
